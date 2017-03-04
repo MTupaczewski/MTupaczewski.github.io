@@ -1,48 +1,187 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lange="en">
 <head>
-    <meta charset="utf-8">
-    <title>Basic HTML</title>
-    <link rel="stylesheet" href="#">
-    <style>
-        body{
-            width: 600px;
-        }
-        iframe{
-            margin-bottom: 20px;
-        }
-        ul{
-            padding: 0;
-        }
-        li{
-            list-style: none;
-        }
-    </style>
+<meta charset="utf-8" />
+<title> Intro to HTML and CSS - project</title>
+<style>
+body {
+	background : RGB(4,71,227);
+	margin : 0;
+	padding : 0;
+	font-family : "Helvetica", "Arial":
+}
+#wrapper {
+	width : 960px;
+	height : auto;
+	background : #DAD5C1;
+	border-left : 5px solid #A09885;
+	border-right : 5px solid #A09885;
+	overflow : auto;
+	margin : 0 auto;
+	padding 10px;
+}
+#header {
+	width : 100%;
+	height : 100px;
+	border-bottom : 3px solid #7C7063;
+}
+#logo {
+	float : left;
+	margin : 15px 0px 0px 80px;
+}
+#social {
+	float : right;
+	margin : 20px 30px 0px 0px;
+}
+#social ul li {
+	float : left;
+	list-style : none;
+	padding-right : 5px;
+}
+#social img {
+	height : 55px;
+	width : 55px;
+}
+#sidebar {
+	float : left;
+	width : 275px;
+	height : 100%;
+}
+#menu ul{
+	float : left;
+	height : auto;
+	width : 200px;
+}
+#menu ul li{
+	list-style : none;
+	padding : 5px;
+	text-align : center;
+}
+#menu ul li a{
+	background : RGB(0,162,232);
+	color : RGB(255,0,0);
+	text-decoration : none;
+	padding : 10px 0px;
+	display : block;
+}
+#menu ul li a:hover {
+	color : #FFF;
+}
+#content {
+	float : left;
+	width : 655px;
+	height : 100%;
+	padding-left : 15px;
+	letter-spacing : 1;
+	color : #FF0000;
+	border-left : 3px solid #7C7063;
+}
+h1 {
+	text-align : center;
+	padding : 5px;
+	border-bottom : 1px solid #7C7063;
+}
+p {
+	text-indent : 50px;
+	line-height : 25px;
+}
+img {
+	float : right;
+	padding : 0px 0px 5px 5px;
+}
+.top a{
+	color : #4E4F3E;
+}
+#table {
+	margin: 0px 0px 30px 175px;
+}
+iframe {
+	margin-left : 55px;
+}
+#footer {
+	clear : both;
+	width : 100%;
+	height : 80px;
+	color : ##FF0000;
+	border-top : 3px solid #7C7063;
+}
+h5 {
+	text-align : center;
+	}
+</style>
 </head>
-<body style="background-color:yellow">
-    <img src="picture.jpg" alt="avatar" width="200px" height="auto"/>
-    <h1> Maciej Tupaczewski</h1>
-    <h2> Warsaw Mazowieckie Poland</h2>
-    <p> I am a student of astronomy at University of Warsaw. I am learning how to become a web developer on coderstrust site. I like to study physics and programming. I like reading books, playing computer games and cook.</p>
-    
-    <h3> Education</h3>
-    <ul>
-        <li> Two years of Nuclear chemistry and energy at Faculty of Physics and Faculty of Chemistry, University of Warsaw</li>
-        <li> Astronomy at Faculty of Physics, University of Warsaw</li>
-    </ul>
-    <h3> Work experience</h3>
-    <ul>
-        <li>Training in the Institute of nuclear chemistry and technology (ICHTJ)</li>
-    </ul>
-    <h3> Links</h3>
-    <ul>
-        <li> <a href="https://www.facebook.com"> Facebook</a></li>
-        <li> <a href="https://plus.google.com"> Google+</a></li>
-        <li> <a href="https://twitter.com"> Twitter</a></li>
-    </ul>
-    <h3> Videos &amp; Music I like</h3>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/tRcTxX1tIDM" frameborder="0" allowfullscreen></iframe>
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/4a_67qzpBLA" frameborder="0" allowfullscreen></iframe>
-    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/110218670&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<a name="top"></a>
+			<div id="logo">
+				<img src="C:\Users\Maciej\Desktop\My_first_website\MyTravels.png" width="350" height="80" alt="Logo" title="MyTravels" />
+			</div> <!---End of logo--->
+			<div id="social">
+				<ul>
+					<li><a href = "http://www.facebook.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/facebook.png" alt="facebook" title="facebook" /></a></li>
+				<li><a href = "http://www.twitter.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/twitter.png" alt="twitter" title="twitter" /></a></li>
+				<li><a href = "http://www.youtube.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/youtube.png" alt="youtube" title="youtube" /></a></li>
+				<li><a href = "http://www.plus.google.com" target="_blank"><img src="http://www.w3newbie.com/wp-content/uploads/google_plus.png" alt="Google+" title="Google+" /></a></li>
+				</ul>
+			</div> <!---End of social--->
+	</div> <!---End of header--->
+	<div id="sidebar">
+		<div id="menu">
+			<ul>
+				<li><h2><a href="#intro">Intro</a></h2></li>
+				<li><h2><a href="#malta">Malta</a></h2></li>
+				<li><h2><a href="#edinburgh">Edinburgh</a></h2></li>
+				<li><h2><a href="#Ireland">Ireland</a></h2></li>
+			</ul>
+		</div>
+	</div> <!---End of sidebar--->
+	<div id="content">
+		<a name="intro"><h1>My favourite places to travel</h1>
+			<img src="C:\Users\Maciej\Desktop\My_first_website\IMG_2240.JPG" width="400" height="250" alt="Travels" title="Travels"/>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et varius erat. Aliquam ornare purus in ornare dignissim. Etiam at venenatis dui. Donec placerat ipsum eros, id fermentum turpis egestas id. Suspendisse rhoncus, tortor quis mollis ullamcorper, orci massa aliquet diam, at placerat augue nibh nec ligula. Sed laoreet fringilla nisi. In cursus turpis eget gravida gravida. Cras feugiat justo ut augue vehicula lacinia. Sed euismod est interdum libero posuere iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam rhoncus porta rutrum. Sed nec lacus eget sapien vehicula semper ac vulputate lacus. Pellentesque et elementum nulla. Vestibulum vehicula tempus molestie. Fusce id massa tincidunt nunc mollis sodales. Donec ante est, ullamcorper eget tincidunt ac, dignissim ut nunc. Aenean cursus tortor non sapien dignissim, ac vestibulum ante iaculis. Curabitur leo ante, mattis non laoreet vitae, malesuada in quam. Nullam lacinia venenatis luctus. Pellentesque sed purus ut velit sagittis sollicitudin sed non libero. Suspendisse pulvinar lorem nisi, at ultrices urna aliquam sit amet.</p>
+			<a name="malta"><h1>Malta</h1>
+			<img src="C:\Users\Maciej\Desktop\My_first_website\IMG_2256.JPG" width="350" height="200" alt="Malta" title="Malta"/>
+				<p>Sed vitae orci sit amet odio ullamcorper laoreet non pharetra neque. Mauris erat odio, ornare sit amet justo quis, sollicitudin vulputate metus. Etiam vestibulum, ante vel sollicitudin eleifend, lorem arcu dignissim urna, ac commodo mi lacus nec nunc. Quisque elementum, lorem bibendum cursus scelerisque, quam enim accumsan erat, non pellentesque felis orci vitae metus. Mauris vestibulum felis nibh, id molestie eros sagittis dictum. Mauris sodales commodo purus quis congue. Sed ultrices elit a ligula fringilla, id fermentum dui ultricies. Quisque eget rutrum libero, eu dapibus augue. Vivamus pellentesque scelerisque nulla eget venenatis. Nullam sit amet purus a massa commodo condimentum. Vestibulum vel feugiat arcu. Aliquam at porttitor augue. Nullam lobortis magna sed tellus gravida fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel eros tempor, bibendum ipsum sit amet, congue velit. Etiam vestibulum nisl sit amet ultricies lacinia. Vestibulum eu accumsan lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam diam leo, imperdiet non vulputate sit amet, ultrices sit amet turpis. Pellentesque velit leo, accumsan quis hendrerit in, eleifend non lectus. Pellentesque sit amet nisl elementum, interdum mi sed, semper urna.</p>
+				<div class="top"><h4><a href="#top">Go to the top!</a></h4></div>
+			<a name="edinburgh"><h1>Edinburgh</h1>
+			<img src="C:\Users\Maciej\Desktop\My_first_website\IMG_2434.JPG" width="430" height="260"alt="Edinburgh" title="Edinburgh"/>
+				<p>Praesent condimentum orci non ligula luctus semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Quisque auctor lorem orci, at consequat tortor egestas ut. Vivamus vitae nulla elit. Pellentesque sagittis malesuada convallis. In sed tincidunt nibh. Nullam vel pharetra eros. Nam feugiat condimentum sem sed congue. Ut in nibh in lorem ultricies accumsan ac et mauris. Donec sollicitudin odio eu lorem accumsan tempus. Maecenas orci nulla, eleifend sollicitudin hendrerit eu, egestas egestas tortor. Maecenas imperdiet rutrum ipsum ac dictum. Praesent condimentum orci non ligula luctus semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Quisque auctor lorem orci, at consequat tortor egestas ut. Vivamus vitae nulla elit. Pellentesque sagittis malesuada convallis. In sed tincidunt nibh. Nullam vel pharetra eros. Nam feugiat condimentum sem sed congue. Ut in nibh in lorem ultricies accumsan ac et mauris. Donec sollicitudin odio eu lorem accumsan tempus. Maecenas orci nulla, eleifend sollicitudin hendrerit eu, egestas egestas tortor. Maecenas imperdiet rutrum ipsum ac dictum.</p>
+				<div class="top"><h4><a href="#top">Go to the top!</a></h4></div>
+			<a name="ireland"><h1>Ireland</h1>
+				<p>Sed vitae orci sit amet odio ullamcorper laoreet non pharetra neque. Mauris erat odio, ornare sit amet justo quis, sollicitudin vulputate metus. Etiam vestibulum, ante vel sollicitudin eleifend, lorem arcu dignissim urna, ac commodo mi lacus nec nunc. Quisque elementum, lorem bibendum cursus scelerisque, quam enim accumsan erat, non pellentesque felis orci vitae metus. Mauris vestibulum felis nibh, id molestie eros sagittis dictum. Mauris sodales commodo purus quis congue. Sed ultrices elit a ligula fringilla, id fermentum dui ultricies.</p>
+				
+					<div id="table">
+						<table border="1">
+							<tr>
+								<th>-------</th>
+								<th>Day 1</th>
+								<th>Day 2</th>
+								<th>Day 3</th>
+							</tr>
+							<tr>
+								<th>Weather</th>
+								<th>Rain</th>
+								<th>Sunny</th>
+								<th>Windy</th>
+							</tr>
+							<tr>
+								<th>Hours</th>
+								<th>4</th>
+								<th>6</th>
+								<th>2</th>
+							</tr>
+						</table>
+					</div><!---End of table--->
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/h_He8jyDjk4" frameborder="0" allowfullscreen></iframe>
+					<div class="top"><h4><a href="#top">Go to the top!</a></h4></div>
+	</div><!---End of content--->
+	<div id="footer">
+		<h5>2017 My First Website<br><a href="mailto:mactup6@gmail.com subject=First Site">Send me an email!</a></h5>
+	</div> <!----End of footer--->
+</div> <!---End of wrapper--->
 </body>
+
+
 </html>
